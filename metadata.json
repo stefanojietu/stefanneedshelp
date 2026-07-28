@@ -1,0 +1,6 @@
+{
+  "name": "Stefan needs help",
+  "description": "A single-page application showing percentage towards a goal using an interactive circular progress gauge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
