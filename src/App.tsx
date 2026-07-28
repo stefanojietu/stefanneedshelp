@@ -1,6 +1,7 @@
 import React from 'react';
 import { GOAL_CONFIG } from './config';
 import { CircularProgress } from './components/CircularProgress';
+import { BankDetailsCard } from './components/BankDetailsCard';
 import { Sparkles } from 'lucide-react';
 
 export default function App() {
@@ -32,14 +33,21 @@ export default function App() {
         </p>
       </header>
 
-      {/* Main Circle Visual */}
-      <main className="flex-1 flex flex-col items-center justify-center my-6">
+      {/* Main Circle Visual & Payment Info */}
+      <main className="flex-1 flex flex-col items-center justify-center my-6 space-y-8">
         <CircularProgress
           amountNeeded={amountNeeded}
           amountReceived={amountReceived}
           currency={currency}
           size={340}
           strokeWidth={28}
+        />
+
+        {/* Bank / Payment Account Details Card */}
+        <BankDetailsCard
+          accountName="Stefan Ojietu"
+          accountNumber="8064763992"
+          bankName="OPay"
         />
       </main>
 
